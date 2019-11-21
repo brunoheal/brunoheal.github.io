@@ -1,0 +1,14 @@
+/*Enlaces*/
+a {
+    text-decoration: none;
+    list-style: none;   
+}
+
+.iPortada {
+    position: relative;   
+}
+
+.hTitle {
+    position: absolute;
+    
+}
