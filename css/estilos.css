@@ -1,14 +1,84 @@
-/*Enlaces*/
-a {
+body {
+    background: #e6ffff !important;
+}
+/* Quitar estilos enlaces y listas */
+
+a, li {
     text-decoration: none;
     list-style: none;   
 }
 
-.iPortada {
-    position: relative;   
+.tEnlace {
+    color: #39ac73;
+    text-decoration: none !important;
+}
+.tEnlace:hover {
+    color: #cc4400;
 }
 
-.hTitle {
-    position: absolute;
+.card {
+    max-width: 569px !important;
+}
+
+.pCard {
+    padding: 0 !important;
+}
+.pTitulo {
+    /* position: absolute;  */
+    font-family: 'Abel', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 2px 4px grey;
+} 
+
+.iTitulo, .tTitulo, .fTitulo, .aTitulo, .proTitulo, .tGrupo {
+    display: inline-block;
+    background: white;
+    box-shadow: 5px 5px 5px grey;
+    padding: 10px;
     
+}
+@media (min-width: 1700px) {
+    .tGrupo {
+        display: block;
+    }
+}
+.iTitulo, .tTitulo, .fTitulo, .aTitulo, .proTitulo {
+    font-family: 'Righteous', cursive;
+}
+
+.tAptitudes {
+    font-family: 'Acme', sans-serif;
+}
+
+.tPagina {
+    font-family: 'Playfair Display', serif;
+}
+
+.fTitulo {
+    background: #ffebe6;
+}
+.tTitulo {
+    background: #e6f2ff;
+}
+.aTitulo {
+    background: #ffe6f2;
+}
+.entorno {
+    font-family: 'Archivo Black', sans-serif;
+    text-shadow: 2px 2px 4px grey;
+}
+
+.proTitulo {
+    background: #ffffe6;
+}
+.eGrupo {
+    margin-bottom: 10px;
+}
+.card {
+    margin-bottom: 18px;
+}
+.li a > i {
+    font-size: 30px;
 }
