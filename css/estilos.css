@@ -1,16 +1,12 @@
 body {
     background: #f2e6d9 !important;
-    
+    overflow-x: hidden;
 }
 
 /* Quitar estilos enlaces y listas */
 a, li {
     text-decoration: none;
     list-style: none;   
-}
-
-.pFin {
-    margin-bottom: 0;
 }
 
 .tEnlace {
@@ -56,14 +52,19 @@ a, li {
 
 .iTitulo, .tTitulo, .fTitulo, .aTitulo, .proTitulo, .tGrupo {
     display: inline-block;
-    background: white;
+    background: white; /**/
     box-shadow: 5px 5px 5px grey;
     padding: 10px;  
 }
 
+/*
+.tGrupo {
+    background: white;
+}
+*/
 @media (min-width: 1700px) {
     .tGrupo {
-        display: block;
+        /*display: block;*/
     }
 }
 
