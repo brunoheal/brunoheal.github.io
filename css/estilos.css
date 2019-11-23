@@ -37,6 +37,7 @@ a, li {
     text-shadow: 2px 2px 4px grey;
     letter-spacing: 8px;
 } 
+
 @media (max-width: 475px) {
     .pTitulo {
         letter-spacing: 0;
