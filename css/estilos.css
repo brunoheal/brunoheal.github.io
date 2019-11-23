@@ -3,12 +3,21 @@ body {
     overflow-x: hidden;
 }
 
+/* Listas y enlaces */
 /* Quitar estilos enlaces y listas */
 a, li {
     text-decoration: none;
     list-style: none;   
 }
 
+/* Tamaño iconos */
+.li a > i {
+    font-size: 30px;
+}
+/* Fin */
+
+/* Tarjetas */
+/* Enlaces tarjeta */
 .tEnlace {
     color: #39ac73;
     text-decoration: none !important;
@@ -18,6 +27,7 @@ a, li {
     color: #cc4400;
 }
 
+/* Imagen tarjeta */
 .card {
     max-width: 569px !important;
     margin-bottom: 18px;
@@ -26,7 +36,9 @@ a, li {
 .pCard {
     padding: 0 !important;  
 }
+/* Fin */
 
+/* Portada foto y nombre incrustado */
 /* Título de portada, dentro de imagen */
 .pTitulo {
     font-family: 'Abel', sans-serif;
@@ -43,32 +55,30 @@ a, li {
         font-size: 2rem;
     }
 }
-/* Fin */
+
 /* Imagen de portada, anchura máxima */
 .pImagen {
     max-width: 2200px;
 }
 /* Fin */
 
-.iTitulo, .tTitulo, .fTitulo, .aTitulo, .proTitulo, .tGrupo {
+/* Títulos de secciones*/
+.titulo, .tGrupo {
     display: inline-block;
-    background: white; /**/
     box-shadow: 5px 5px 5px grey;
     padding: 10px;  
 }
 
-/*
 .tGrupo {
     background: white;
 }
-*/
-@media (min-width: 1700px) {
-    .tGrupo {
-        /*display: block;*/
-    }
+
+.bDerecho {
+    background: white;
 }
 
-.iTitulo, .tTitulo, .fTitulo, .aTitulo, .proTitulo {
+/* Tipografías */
+.titulo {
     font-family: 'Righteous', cursive;
     background: #ffffe6;
 }
@@ -81,10 +91,6 @@ a, li {
     font-family: 'Acme', sans-serif;
 }
 
-.bDerecho {
-    background: white;
-}
-
 .tPagina {
     font-family: 'Playfair Display', serif;
 }
@@ -93,11 +99,4 @@ a, li {
     font-family: 'Archivo Black', sans-serif;
     text-shadow: 2px 2px 4px grey;
 }
-
-.eGrupo {
-    margin-bottom: 10px;
-}
-
-.li a > i {
-    font-size: 30px;
-}
+/* Fin */
