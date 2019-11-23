@@ -1,5 +1,6 @@
 body {
     background: #f2e6d9 !important;
+    
 }
 
 /* Quitar estilos enlaces y listas */
@@ -29,25 +30,29 @@ a, li {
 .pCard {
     padding: 0 !important;  
 }
+
+/* Título de portada, dentro de imagen */
 .pTitulo {
     font-family: 'Abel', sans-serif;
     font-size: 3rem;
     font-weight: 900;
     color: white;
     text-shadow: 2px 2px 4px grey;
-    letter-spacing: 8px;
+    letter-spacing: 8px;  
 } 
 
-@media (max-width: 475px) {
+@media (max-width: 500px) {
     .pTitulo {
         letter-spacing: 0;
         font-size: 2rem;
     }
 }
-
+/* Fin */
+/* Imagen de portada, anchura máxima */
 .pImagen {
-    max-width: 1950px;
+    max-width: 2200px;
 }
+/* Fin */
 
 .iTitulo, .tTitulo, .fTitulo, .aTitulo, .proTitulo, .tGrupo {
     display: inline-block;
