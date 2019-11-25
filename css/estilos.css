@@ -126,4 +126,10 @@ a, li {
 #btnSubir:hover {
     opacity: 0.5;
 }
+
+@media (max-width: 992px) {
+    #btnSubir:hover {
+        opacity: 0.3;
+    }
+}
 /* Fin */
