@@ -21,3 +21,10 @@ function funcionSubir() {
 document.body.scrollTop = 0; // Para Safari
 document.documentElement.scrollTop = 0; // Para el resto
 }
+
+// Para añadir el año automáticamente en el footer
+window.onload = function fecha() {
+    var fecha = new Date();
+    var anio = fecha.getFullYear();
+    document.getElementById("fecha").innerHTML = anio; 
+}
