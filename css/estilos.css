@@ -18,9 +18,17 @@ a, li {
     list-style: none;   
 }
 
-/* Tamaño iconos */
+/* Tamaño iconos y letra cuerpo*/
 .li a > i {
     font-size: 30px;
+}
+
+.info {
+     font-size: 18px;
+}
+
+.cTitulo {
+     font-size: 26px;
 }
 /* Fin */
 
