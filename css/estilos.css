@@ -22,13 +22,21 @@ ul {
     padding: 0;
 }
 
-.margen h4 {
-    margin-bottom: 3rem;
+.tAptitudes h4 {
+    margin-bottom: 1.2rem;
+}
+
+.margen2 {
+    margin-bottom: 1.5rem !important;
 }
 
 @media (min-width: 576px) {
-    .margen h4 {
-        margin-bottom: 1.5rem;
+    .margen {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .tAptitudes h4 {
+        margin-bottom: 1.8rem;
     }  
 }
 
@@ -86,13 +94,48 @@ ul {
 }
 /* Fin imagen principal */
 
+/* Botón para subir */
+#btnSubir {
+    display: none; 
+    position: fixed; 
+    bottom: .625rem; 
+    right: .625rem; 
+    z-index: 99; 
+    opacity: 0.3;
+    border: none; 
+    outline: none; 
+    background-color: #000000;
+    color: white; 
+    cursor: pointer; 
+    padding: .625rem; 
+    border-radius: .3125rem; 
+    font-size: .625rem;
+}    
+   
+#btnSubir:hover {
+    opacity: 0.5;
+}
+
+@media (max-width: 992px) {
+    #btnSubir:hover {
+        opacity: 0.3;
+    }
+}
+/* Fin botón subir */
+
 /* Tamaño iconos y letra cuerpo*/
+@media (max-width: 500px) {
+    .oculto {
+        display: none;        
+    }   
+}
+
 .info {
-     font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 .cTitulo {
-     font-size: 1.69rem;
+    font-size: 1.69rem;
 }
 
 .tPagina i {
@@ -108,12 +151,16 @@ ul {
 }
 
 @media (min-width: 451px) and (max-width: 650px) {
+    #btnSubir {
+        font-size: .8rem;
+    }
+
     .info {
-         font-size: 1.3rem;
+        font-size: 1.3rem;
     }
     
     .cTitulo {
-         font-size: 1.8rem;
+        font-size: 1.8rem;
     }
 
     .tPagina i {
@@ -142,12 +189,16 @@ ul {
 }
 
 @media (min-width: 651px) and (max-width: 770px) {
+    #btnSubir {
+        font-size: 1rem;
+    }
+    
     .info {
-         font-size: 1.4rem;
+        font-size: 1.4rem;
     }
     
     .cTitulo {
-         font-size: 1.9rem;
+        font-size: 1.9rem;
     }
 
     .tPagina i {
@@ -176,12 +227,16 @@ ul {
 }
 
 @media (min-width: 771px) and (max-width: 1199px) {
+    #btnSubir {
+        font-size: 1.1rem;
+    }
+    
     .info {
-         font-size: 1.45rem;
+        font-size: 1.45rem;
     }
     
     .cTitulo {
-         font-size: 2rem;
+        font-size: 2rem;
     }
 
     .tPagina i {
@@ -210,12 +265,16 @@ ul {
 }
 
 @media (min-width: 1200px) {
+    #btnSubir {
+        font-size: 1.2rem;
+    }
+    
     .info {
-         font-size: 1.6rem;
+        font-size: 1.6rem;
     }
     
     .cTitulo {
-         font-size: 2.1rem;
+        font-size: 2.1rem;
     }
 
     .tPagina i {
@@ -335,41 +394,12 @@ ul {
     font-family: 'Acme', sans-serif;
 }
 
-.tPagina {
+.tPagina, .apt {
     font-family: 'Playfair Display', serif;
 }
 
 .entorno {
     font-family: 'Archivo Black', sans-serif;
     text-shadow: .125rem .125rem .25rem #808080;
-}
-/* Fin */
-
-/* Botón para subir */
-#btnSubir {
-    display: none; 
-    position: fixed; 
-    bottom: .625rem; 
-    right: .625rem; 
-    z-index: 99; 
-    opacity: 0.3;
-    border: none; 
-    outline: none; 
-    background-color: #000000;
-    color: white; 
-    cursor: pointer; 
-    padding: .625rem; 
-    border-radius: .3125rem; 
-    font-size: .625rem;   
-}    
-   
-#btnSubir:hover {
-    opacity: 0.5;
-}
-
-@media (max-width: 992px) {
-    #btnSubir:hover {
-        opacity: 0.3;
-    }
 }
 /* Fin */
