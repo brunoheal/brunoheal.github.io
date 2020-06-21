@@ -2,41 +2,252 @@
 @import url('https://fonts.googleapis.com/css?family=Abel|Acme|Archivo+Black|Playfair+Display|Righteous&display=swap');
 /* Fin */
 
+/* Globales */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
 }
 
 body {
     background: #f2e6d9 !important;
-    overflow-x: hidden;   
+    overflow-x: hidden; 
 }
 
-/* Listas y enlaces */
-/* Quitar estilos enlaces y listas */
-a, li {
-    text-decoration: none;
-    list-style: none;   
+a {
+    text-decoration: none !important;   
 }
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.margen h4 {
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 576px) {
+    .margen h4 {
+        margin-bottom: 1.5rem;
+    }  
+}
+
+.progress {
+    box-shadow: .2rem .2rem .2rem #808080;
+}
+/* Fin globales */
+
+/* Imagen principal y retrato */
+.pImagen {
+    height: 30vh;
+    object-fit: cover;
+}
+
+@media (max-width: 575px) {
+    .imagen {
+        height: 9rem;
+    }
+}
+
+@media (min-width: 439px) and (max-width: 575px) {
+    .pImagen {
+        height: 40vh;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .pImagen {
+        height: 50vh;
+    }
+
+    .imagen {
+        height: 10.2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .pImagen {
+        height: 70vh;
+    }
+
+    .imagen {
+        height: 11.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pImagen {
+        height: 100vh;
+    }
+
+    .imagen {
+        height: 14rem;
+    }
+}
+/* Fin imagen principal */
 
 /* Tamaño iconos y letra cuerpo*/
-.li a > i {
-    font-size: 30px;
-}
-
 .info {
-     font-size: 18px;
+     font-size: 1.2rem;
 }
 
 .cTitulo {
-     font-size: 26px;
+     font-size: 1.69rem;
 }
-/* Fin */
+
+.tPagina i {
+    font-size: 1.5rem;
+}
+
+.ico-footer {
+    font-size: 1rem;
+}
+
+.autor {
+    font-size: 1.125rem;
+}
+
+@media (min-width: 451px) and (max-width: 650px) {
+    .info {
+         font-size: 1.3rem;
+    }
+    
+    .cTitulo {
+         font-size: 1.8rem;
+    }
+
+    .tPagina i {
+        font-size: 1.6rem;
+    }
+
+    .ico-footer {
+        font-size: 1.1rem;
+    }
+
+    .autor {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 2.125rem;
+    }
+    
+    h3 {
+        font-size: 1.875rem;
+    }
+    
+    h4 {
+        font-size: 1.6875rem;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 770px) {
+    .info {
+         font-size: 1.4rem;
+    }
+    
+    .cTitulo {
+         font-size: 1.9rem;
+    }
+
+    .tPagina i {
+        font-size: 1.6rem;
+    }
+
+    .ico-footer {
+        font-size: 1.25rem;
+    }
+
+    .autor {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+    
+    h4 {
+        font-size: 1.8125rem;
+    }
+}
+
+@media (min-width: 771px) and (max-width: 1199px) {
+    .info {
+         font-size: 1.45rem;
+    }
+    
+    .cTitulo {
+         font-size: 2rem;
+    }
+
+    .tPagina i {
+        font-size: 1.6rem;
+    }
+
+    .ico-footer {
+        font-size: 1.3rem;
+    }
+
+    .autor {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 2.3125rem;
+    }
+    
+    h3 {
+        font-size: 2.0625rem;
+    }
+    
+    h4 {
+        font-size: 1.875rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .info {
+         font-size: 1.6rem;
+    }
+    
+    .cTitulo {
+         font-size: 2.1rem;
+    }
+
+    .tPagina i {
+        font-size: 1.7rem;
+    }
+
+    .ico-footer {
+        font-size: 1.5rem;
+    }
+
+    .autor {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: 2.4375rem;
+    }
+    
+    h3 {
+        font-size: 2.1875rem;
+    }
+    
+    h4 {
+        font-size: 2rem;
+    }
+}
+/* Fin tamaño iconos y letras */
 
 /* Tarjetas */
 /* Enlaces tarjeta */
 .tEnlace {
     color: #39ac73;
-    text-decoration: none !important;
 }
 
 .tEnlace:hover {
@@ -46,11 +257,12 @@ a, li {
 /* Imagen tarjeta */
 .card {
     max-width: 569px !important;
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
+    box-shadow: .25rem .25rem .25rem #808080;
 }
 
 .pCard {
-    padding: 0 !important;  
+    padding: 0 !important;
 }
 /* Fin */
 
@@ -58,26 +270,47 @@ a, li {
 /* Título de portada, dentro de imagen */
 .pTitulo {
     font-family: 'Abel', sans-serif;
-    font-size: 3rem;
+    font-size: 2.25rem;
     font-weight: 900;
     color: white;
-    text-shadow: 2px 2px 4px grey;
-    letter-spacing: 8px;  
+    text-shadow: .22rem .22rem .22rem grey;
+    letter-spacing: .1875rem;  
 } 
 
-@media (max-width: 500px) {
+@media (min-width: 451px) and (max-width: 650px) {
     .pTitulo {
-        letter-spacing: 0;
-        font-size: 2rem;
+        letter-spacing: .1875rem;
+        font-size: 2.5rem;
     }
+}
+
+@media (min-width: 651px) and (max-width: 770px) {
+    .pTitulo {
+        letter-spacing: .1875rem;
+        font-size: 2.9rem;
+    }
+}
+
+@media (min-width: 771px) and (max-width: 1199px) {
+    .pTitulo {
+        letter-spacing: .4375rem;
+        font-size: 3.4rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pTitulo {
+        letter-spacing: .5625rem;
+        font-size: 4rem;
+    }   
 }
 /* Fin */
 
 /* Títulos de secciones*/
 .titulo, .tGrupo {
     display: inline-block;
-    box-shadow: 5px 5px 5px grey;
-    padding: 10px;  
+    box-shadow: .3125rem .3125rem .3125rem #808080;
+    padding: .625rem;  
 }
 
 .tGrupo {
@@ -108,7 +341,7 @@ a, li {
 
 .entorno {
     font-family: 'Archivo Black', sans-serif;
-    text-shadow: 2px 2px 4px grey;
+    text-shadow: .125rem .125rem .25rem #808080;
 }
 /* Fin */
 
@@ -116,8 +349,8 @@ a, li {
 #btnSubir {
     display: none; 
     position: fixed; 
-    bottom: 10px; 
-    right: 10px; 
+    bottom: .625rem; 
+    right: .625rem; 
     z-index: 99; 
     opacity: 0.3;
     border: none; 
@@ -125,9 +358,9 @@ a, li {
     background-color: #000000;
     color: white; 
     cursor: pointer; 
-    padding: 10px; 
-    border-radius: 5px; 
-    font-size: 10px;   
+    padding: .625rem; 
+    border-radius: .3125rem; 
+    font-size: .625rem;   
 }    
    
 #btnSubir:hover {
