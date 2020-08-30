@@ -111,14 +111,10 @@ ul {
     border-radius: .3125rem; 
     font-size: .625rem;
 }    
-   
-#btnSubir:hover {
-    opacity: 0.5;
-}
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
     #btnSubir:hover {
-        opacity: 0.3;
+        opacity: 0.5;
     }
 }
 /* Fin botón subir */
@@ -332,7 +328,7 @@ ul {
     font-size: 2.25rem;
     font-weight: 900;
     color: white;
-    text-shadow: .22rem .22rem .22rem grey;
+    text-shadow: .1875rem .1875rem .375rem grey;
     letter-spacing: .1875rem;  
 } 
 
